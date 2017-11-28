@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>UserView</servlet-name>
+        <servlet-class>servlet.UserView</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UserDetail</servlet-name>
+        <servlet-class>servlet.UserDetail</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UserCreate</servlet-name>
+        <servlet-class>servlet.UserCreate</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserView</servlet-name>
+        <url-pattern>/UserView</url-pattern>
+    </servlet-mapping>
+    <welcome-file-list>
+        <welcome-file>
+            UserView
+        </welcome-file>
+    </welcome-file-list>
+    <servlet-mapping>
+        <servlet-name>UserDetail</servlet-name>
+        <url-pattern>/UserDetail</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UserCreate</servlet-name>
+        <url-pattern>/UserCreate</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
