@@ -45,7 +45,7 @@ public class UserCreate extends HttpServlet {
             Logger.getLogger(UserCreate.class.getName()).log(Level.SEVERE, null, ex);
         }
 
-        resp.sendRedirect("/ReflektSampleCode/");
+        resp.sendRedirect("/SampleCode/");
     }
 
     @Override
